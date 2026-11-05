@@ -1,0 +1,28 @@
+{
+  "name": "orbit",
+  "owner": {
+    "name": "TalentPluto"
+  },
+  "metadata": {
+    "description": "TalentPluto's Orbit connectors for Claude Code: Polaris, the people-finding assistant for Orbit members."
+  },
+  "plugins": [
+    {
+      "name": "polaris",
+      "source": "./plugins/polaris",
+      "description": "Work with Polaris, the Orbit member's people-finding assistant, from Claude or Codex: catch up on what Polaris found, say yes or no to people with reasons, refine searches, manage goals, answer intro requests and ask for intros on the member's own Polaris thread, the same one they text.",
+      "category": "productivity",
+      "keywords": [
+        "polaris",
+        "orbit",
+        "people search",
+        "intros",
+        "introductions",
+        "networking",
+        "goals",
+        "people suggestions",
+        "mcp"
+      ]
+    }
+  ]
+}
