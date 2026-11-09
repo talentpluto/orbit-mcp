@@ -1,9 +1,9 @@
 {
   "name": "polaris",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Work with Polaris, the Orbit member's people-finding assistant, from Claude or Codex: catch up on what Polaris found, say yes or no to people with reasons, refine searches, manage goals, answer intro requests and ask for intros on the member's own Polaris thread, the same one they text.",
   "author": {
-    "name": "Pluto"
+    "name": "Orbit"
   },
   "keywords": [
     "polaris",
@@ -22,7 +22,7 @@
     "displayName": "Polaris",
     "shortDescription": "Review and refine what Polaris finds for you.",
     "longDescription": "Connect with the phone you text Polaris from to work on your own Polaris thread in Codex: see what Polaris found since last time, say yes or no to people with your reasons, refine what you are looking for, manage goals, answer intro requests and ask for intros. Saved decisions are shared with your dashboard and Polaris. Searching here does not automatically text results.",
-    "developerName": "Pluto",
+    "developerName": "Orbit",
     "category": "Productivity",
     "capabilities": [
       "Read",
@@ -33,8 +33,8 @@
       "Keep looking for this every week.",
       "Tell Polaris about me."
     ],
-    "brandColor": "#4F46E5",
-    "composerIcon": "./assets/polaris_star.svg",
-    "logo": "./assets/polaris_star.svg"
+    "brandColor": "#1D1F1E",
+    "composerIcon": "./assets/orbit.png",
+    "logo": "./assets/orbit.png"
   }
 }

@@ -1,10 +1,10 @@
 {
   "name": "orbit",
   "owner": {
-    "name": "TalentPluto"
+    "name": "Orbit"
   },
   "metadata": {
-    "description": "TalentPluto's Orbit connectors for Claude Code: Polaris, the people-finding assistant for Orbit members."
+    "description": "Orbit connectors for Claude Code: Polaris, the people-finding assistant for Orbit members."
   },
   "plugins": [
     {
