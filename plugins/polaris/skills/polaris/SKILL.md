@@ -20,6 +20,10 @@ note, or ask for an intro on their behalf without them saying so.
    unreviewed people grouped by goal, then relevant pending decisions from
    `list_requests`, then useful suggestions. Summarize texts; do not replay
    them. Deduplicate repeated mentions while retaining separate goal decisions.
+   Goal people are the current visible unreviewed snapshot, independent of
+   `since`. Retain `(goalId, personKey)` pairs across catch-ups and suppress
+   unchanged pairs already summarized. The same person in different goals
+   still has separate decisions. Do not label all unreviewed people new.
    Suggestions can be existing ones; do not call them new without evidence.
 2. When `hasMoreTexts` is true, follow `nextTextCursor` using `before` with
    the same `since` until all pages are read. Save the first response’s
