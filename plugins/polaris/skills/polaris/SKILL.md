@@ -91,13 +91,19 @@ IDs, paths or authentication links. Omit the footer if an older server omits
 - Link names only to returned absolute HTTPS LinkedIn URLs on `linkedin.com`
   or `linkedin.cn`, including subdomains. Otherwise leave names unlinked.
   Never construct a URL. Escape Markdown table delimiters in returned data.
-- Show at most five people in chat, in relevance order. Disclose shown versus
-  total using `preview.shown` / `preview.total`, and link to the full shortlist
-  at the bottom. New MCP searches save at most fifteen people in the webapp;
+- Show at most five people in chat, in relevance order. Disclose the actual
+  number rendered versus `preview.total`, then link to the full shortlist.
+  `preview.shown` is the server-returned count: if asked for two of a five-person
+  preview with total fifteen, show two and say “Showing 2 of 15.” New MCP searches save at most fifteen people in the webapp;
   older searches may have more. Never pad a named-person lookup to five.
-  Requests for more results go to that webapp link. `get_search` with `personId`
+  When `webUrl` is present, requests for more go to that link. If an older server
+  omits it, use the count of actually returned people as the known total and,
+  only on request, show the next at most five already-returned people. Never
+  invent an unseen page, refetch to bypass a preview, or construct a URL.
+  `get_search` with `personId`
   retrieves one selected person’s detail, not another page of search results.
-- Use `matchCounts` for the returned preview. If all are possible matches, put
+- `matchCounts` describes the server preview. When showing fewer people, use
+  those people’s `match` fields for subset claims. If all are possible matches, put
   that limitation before the table. Missing evidence is not proof of absence.
 - Tie `whyTheyFit` to this search with returned professional evidence, rather
   than repeating the title or location. Do not invent fit evidence or scores.
