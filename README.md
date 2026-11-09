@@ -1,6 +1,6 @@
 # Orbit MCP
 
-Polaris is TalentPluto's people-finding assistant for Orbit members. This
+Polaris is Orbit's people-finding assistant. This
 repository is the plugin marketplace that connects Claude Code and Codex to
 it. It is separate from the Pluto recruiting plugin
 ([talentpluto/pluto-mcp](https://github.com/talentpluto/pluto-mcp)):
