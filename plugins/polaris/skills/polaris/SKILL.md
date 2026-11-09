@@ -22,8 +22,10 @@ note, or ask for an intro on their behalf without them saying so.
    them. Deduplicate repeated mentions while retaining separate goal decisions.
    Suggestions can be existing ones; do not call them new without evidence.
 2. When `hasMoreTexts` is true, follow `nextTextCursor` using `before` with
-   the same `since` until all pages are read. Keep the time of the first call
-   and use it as `since` on the next catch-up, after finishing these pages.
+   the same `since` until all pages are read. Save the first response’s
+   `checkedAt` and use it as `since` on the next catch-up only after all pages
+   finish. Never replace it with a later page’s `checkedAt`. If an older server
+   omits `checkedAt`, retain the previous boundary; do not guess a new one.
 3. A specific request takes priority over an unrelated catch-up. Use
    `list_searches`, `get_search` or `list_goals` as needed, without replaying
    a welcome or old suggestions. Do not invent a previous catch-up timestamp.
