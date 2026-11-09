@@ -180,10 +180,15 @@ IDs, paths or authentication links. Omit the footer if an older server omits
 
 - A short “Connect with someone?” invitation can follow results when relevant.
   Reading results or recording interest never requests an introduction.
-- When they select someone and ask to connect, call `request_intro` with the
-  returned search/person or goal/person identifiers and their reason. Use known
-  context; ask for a reason only if it is missing. The server checks eligibility.
-  Never infer private membership from a missing public profile.
+- Honor an explicit channel first: “connect on LinkedIn,” a LinkedIn message,
+  or a LinkedIn draft uses `draft_linkedin`, never `request_intro`. Email requests
+  follow the approved Gmail draft flow below.
+- Use `request_intro` only when they select someone and ask for an introduction
+  or connection through Orbit. Pass the returned search/person or goal/person
+  identifiers and their reason. Use known context; ask for a reason only if it
+  is missing. If “connect” has no clear channel or intro context, ask whether
+  they want an Orbit introduction or a direct message before acting. The server
+  checks eligibility. Never infer membership from a missing public profile.
 - `confirmation_required` means they must confirm via returned `smsUrl`;
   queued/pending means in progress. Neither means a completed connection.
 - `delivery: direct` returns a personalized draft and LinkedIn URL. Show both;
