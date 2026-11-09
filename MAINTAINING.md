@@ -27,3 +27,18 @@ Orbit allow list.
 
 Sign-in uses the phone number the member texts Polaris from. The OAuth start
 page sends any request with Orbit scopes to `/connect/polaris`.
+
+## Repository ownership and rollout
+
+This repository owns the Polaris connector packaging and client guidance.
+The shared MCP server, authentication, search intake and background workers
+remain in `talentpluto/webapp`; do not copy those services into this plugin.
+
+The shared-intake and durable-search rollout is tracked in
+[TP-327](https://linear.app/talentpluto/issue/TP-327), with backend changes in
+[webapp#2501](https://github.com/talentpluto/webapp/pull/2501) and
+[webapp#2504](https://github.com/talentpluto/webapp/pull/2504), on top of
+[webapp#2496](https://github.com/talentpluto/webapp/pull/2496). Deploy both the
+web server and worker before enabling the `orbit-mcp-search` task flag.
+Connector guidance follows the live tool catalog and supports the existing
+standalone query contract until `prepare_search` is available.

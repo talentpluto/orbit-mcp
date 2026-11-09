@@ -9,8 +9,9 @@ installing one never installs the other, and each has its own sign-in.
 With Polaris you work on your own Polaris thread, the same one you text:
 catch up on what Polaris found, say yes or no to people with your reasons,
 refine searches, manage goals, answer intro requests and ask for intros.
-Everything you decide shows up in iMessage and on the dashboard, and Polaris
-learns from it as if you had texted.
+Saved decisions are shared with the dashboard and Polaris. Searching here
+does not automatically text results or change which person an SMS number
+refers to.
 
 Sign in with the phone you text Polaris from. New to Polaris? The sign-in
 window lets you join: it finds your profile, then you text Polaris a short

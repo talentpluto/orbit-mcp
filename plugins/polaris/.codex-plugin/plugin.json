@@ -1,6 +1,6 @@
 {
   "name": "polaris",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Work with Polaris, the Orbit member's people-finding assistant, from Claude or Codex: catch up on what Polaris found, say yes or no to people with reasons, refine searches, manage goals, answer intro requests and ask for intros on the member's own Polaris thread, the same one they text.",
   "author": {
     "name": "Pluto"
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "Polaris",
     "shortDescription": "Review and refine what Polaris finds for you.",
-    "longDescription": "Connect with the phone you text Polaris from to work on your own Polaris thread in Codex: see what Polaris found since last time, say yes or no to people with your reasons, refine what you are looking for, manage goals, answer intro requests and ask for intros. Everything you decide shows up in iMessage and on your dashboard, and Polaris learns from it as if you had texted.",
+    "longDescription": "Connect with the phone you text Polaris from to work on your own Polaris thread in Codex: see what Polaris found since last time, say yes or no to people with your reasons, refine what you are looking for, manage goals, answer intro requests and ask for intros. Saved decisions are shared with your dashboard and Polaris. Searching here does not automatically text results.",
     "developerName": "Pluto",
     "category": "Productivity",
     "capabilities": [
@@ -30,7 +30,6 @@
     ],
     "defaultPrompt": [
       "What's new from Polaris?",
-      "Pass on the first three, too senior.",
       "Keep looking for this every week.",
       "Tell Polaris about me."
     ],
