@@ -26,6 +26,9 @@ note, or ask for an intro on their behalf without them saying so.
    `checkedAt` and use it as `since` on the next catch-up only after all pages
    finish. Never replace it with a later page’s `checkedAt`. If an older server
    omits `checkedAt`, retain the previous boundary; do not guess a new one.
+   Text reads overlap `since` by five minutes to tolerate delivery timing.
+   Retain returned `messageId` values across catch-ups and suppress IDs already
+   summarized; different IDs remain separate even when their text is identical.
 3. A specific request takes priority over an unrelated catch-up. Use
    `list_searches`, `get_search` or `list_goals` as needed, without replaying
    a welcome or old suggestions. Do not invent a previous catch-up timestamp.
