@@ -1,0 +1,20 @@
+{
+  "name": "orbit",
+  "interface": {
+    "displayName": "Orbit"
+  },
+  "plugins": [
+    {
+      "name": "polaris",
+      "source": {
+        "source": "local",
+        "path": "./plugins/polaris"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
