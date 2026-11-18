@@ -120,8 +120,9 @@ IDs, paths or authentication links. Omit the footer if an older server omits
 - Link names only to returned absolute HTTPS LinkedIn URLs on `linkedin.com`
   or `linkedin.cn`, including subdomains. Otherwise leave names unlinked.
   Never construct a URL.
-- When `preview.hasMore` is true, call `get_search` with `toReview` after
-  they answer and repeat with the next list. New MCP searches save at most
+- When `preview.nextOffset` is not null, more people remain. When the member
+  wants them, call `get_search` with that offset unchanged and repeat with the
+  next list; they never have to answer first to see the rest. New MCP searches save at most
   fifteen people; older searches may have more. Never pad a named-person
   lookup. Never invent unseen people; `get_search` with `personId` retrieves
   one selected person's detail.
