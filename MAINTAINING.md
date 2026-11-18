@@ -22,8 +22,7 @@ the version when the skill or manifests change.
 (`app/api/mcp/orbit` and `lib/mcp/orbit` in the webapp). It has its own OAuth
 resource and the scopes `orbit:read`, `orbit:write`, `orbit:intro` and
 `offline_access`, which the server never combines with recruiting or
-personal-profile scopes. It is gated by the `orbitMcp` feature flag and the
-Orbit allow list.
+personal-profile scopes. It is open to everyone on the Orbit allow list.
 
 Sign-in uses the phone number the member texts Polaris from. The OAuth start
 page sends any request with Orbit scopes to `/connect/polaris`.
